@@ -245,7 +245,7 @@ upload.modules.addmodule({
         if (e == 'decrypting') {
             this._.content.loading.text('Decrypting')
         } else if (e == 'error') {
-          this._.content.loading.text('File not found or corrupt')
+          this._.content.loading.text('File deleted!')
           this._.newupload.show()
         } else {
             var text = ''

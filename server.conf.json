@@ -1,0 +1,31 @@
+{
+  "api_key": "apikeydef",
+  "delete_key": "delkeydef",
+  "maximum_file_size": 50000000,
+  "deletion_period": 2700,
+  "scrub_on_reboot": true,
+  
+  "path": {
+    "i": "i",
+    "client": "client"
+  },
+
+  "http": {
+    "enabled": true,
+    "listen": ":8080"
+  },
+
+  "https": {
+    "enabled": false,
+    "listen": ":443",
+    "cert": "./cert.pem",
+    "key": "./key.pem"
+  },
+
+  "cloudflare-cache-invalidate": {
+    "enabled": false,
+    "token": "Cloudflare API token here",
+    "email": "Cloudflare login email here",
+    "domain": "Domain to invalidate cache on"
+  }
+}
