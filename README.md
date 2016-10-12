@@ -11,7 +11,7 @@ It has the ability to view images, text with syntax highlighting, short videos, 
 
 ### Automatic deletion 
 This modification adds support for deleting files after a certain period of time has elapsed.
-The option is defined in server.conf.json as `deletion_period`, the number of seconds before deletion by the server.
+The option is defined in config.json as `deletion_period`, the number of seconds before deletion by the server.
 The file will remain on the server indefinitely if the value of `deletion_period` is 0.
 
 Because files will remain on the server if the process is interrupted, the file storage folder will be erased when the server restarts if the config value `scrub_on_reboot` is true.
@@ -33,10 +33,10 @@ Then, to build Up1, just type
 
 ## Running
 
-Edit server.conf according to your use case.
+Edit config.json according to your use case.
 
 then type
 
 `
-./server
+./up1d
 `

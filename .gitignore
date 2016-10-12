@@ -1,5 +1,6 @@
 i/
-server.conf
+config.json
 config.js
 node_modules
-server
+up1d
+
