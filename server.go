@@ -241,7 +241,7 @@ func cfInvalidate(ident string, https bool) {
 }
 
 func main() {
-	configName := flag.String("config", "server.conf.json", "Configuration file")
+	configName := flag.String("config", "server.conf", "Configuration file")
 	flag.Parse()
 
 	config = readConfig(*configName)
